@@ -1,0 +1,117 @@
+Create and Configure a New Web Service on Render
+
+This section guides you through setting up a new Web Service on Render to host your Node.js backend server.
+
+Steps to Create a New Web Service
+
+
+
+
+
+Access the Render Dashboard:
+
+
+
+
+
+Log in to Render using your GitHub account.
+
+
+
+On the Render Dashboard, click New > Web Service.
+
+
+
+Connect Your GitHub Account:
+
+
+
+
+
+If prompted, authorize Render to access your GitHub account.
+
+
+
+This allows Render to pull your repository for deployment.
+
+
+
+Select Your Repository:
+
+
+
+
+
+From the list of repositories, select your repository (e.g., your-username/your-repo).
+
+
+
+Ensure you choose the main branch, as this is where your code resides.
+
+Configure the Web Service
+
+
+
+
+
+Name:
+
+
+
+
+
+Enter a name for your service, such as ugc-app-backend. This will also be part of your Render URL (e.g., https://ugc-app-backend.onrender.com).
+
+
+
+Environment:
+
+
+
+
+
+Select Node as the environment, since this is a Node.js application.
+
+
+
+Region:
+
+
+
+
+
+Choose a region close to your users for better latency (e.g., Oregon, US West).
+
+
+
+Build Command:
+
+
+
+
+
+Enter npm install. This command installs your project dependencies as defined in package.json.
+
+
+
+Start Command:
+
+
+
+
+
+Enter npm start. This command runs node server.js as specified in the scripts section of your package.json.
+
+
+
+Instance Type:
+
+
+
+
+
+Select the free tier for now to keep costs low during development and testing.
+
+
+
+You can upgrade to a paid plan later if you need more resources.
