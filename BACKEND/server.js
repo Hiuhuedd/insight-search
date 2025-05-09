@@ -15,14 +15,14 @@ app.use(express.json());
 // Reddit API setup
 const r = new snoowrap({
   userAgent: 'ugc-app/0.1 by hiuhuk',
-  clientId: process.env.REDDIT_CLIENT_ID,
-  clientSecret: process.env.REDDIT_CLIENT_SECRET,
-  username: process.env.REDDIT_USERNAME,
-  password: process.env.REDDIT_PASSWORD,
+  clientId: "KBhWWjcQfN_yoI4efoC3lQ",
+  clientSecret: "OmqrMnJZuAHtMVHarb4t5ZOb6zBL0g",
+  username:"hiuhuK",
+  password: "hiuhu2040",
 });
 
 // NewsAPI setup
-const NEWS_API_KEY = process.env.NEWS_API_KEY;
+const NEWS_API_KEY = "622179b73d4346d6b83c17178f185f90";
 
 // Helper function to auto-scroll pages (for Quora)
 async function autoScroll(page) {
@@ -134,7 +134,7 @@ app.get('/quora/search', async (req, res) => {
 
   try {
     const searchQuery = `site:quora.com "${query}"`;
-    const url = `https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CX}&q=${encodeURIComponent(searchQuery)}&num=10`;
+    const url = `https://www.googleapis.com/customsearch/v1?key=AIzaSyBUEZnTl0M5KLVGUonLq_Lhz3ht7StgPn4&cx=a63093a4e2f8d4521&q=${encodeURIComponent(searchQuery)}&num=10`;
     console.log('Fetching Quora search results from Google API:', url);
 
     const response = await axios.get(url);
